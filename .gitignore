@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+# Generated models, runtimes, caches and logs
+*.gguf
+*.safetensors
+*.bin
+*.partial
+*.log
+*.zip
+/content/
+artifacts/
+logs/
+build*/
+hf-model/
+llama.cpp/
+run_state.json
+conversion_checkpoint.json

@@ -1,0 +1,54 @@
+{
+  "scope": "One completed Colab CPU preparation run; model weights are not included",
+  "model_repo": "Qwen/Qwen3-1.7B",
+  "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "llama_commit": "d6be065572cdb7bf64014c8c5771e210c9570e44",
+  "preparation_script_sha256": "2cd0cdba0f30ad9f9f10f67f2d5e1299447e5340783cb3cb8978776d9db4423f",
+  "model": {
+    "filename": "Qwen3-1.7B-Q4_K_M.gguf",
+    "size_bytes": 1282439520,
+    "sha256": "ee582cfa297a5a385412582d25d8fb2f8e565125ab6ea6cddf9e3d121afc261d"
+  },
+  "settings": {
+    "pipeline_version": 1,
+    "model_repo": "Qwen/Qwen3-1.7B",
+    "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "llama_commit": "d6be065572cdb7bf64014c8c5771e210c9570e44",
+    "source_precision": "bf16",
+    "quantization": "Q4_K_M",
+    "imatrix": null,
+    "seed": 42,
+    "temperature": 0,
+    "max_new_tokens": 128,
+    "ppl_context": 512,
+    "ppl_chunks": 4,
+    "corpus_sha256": "7a4f55753996d31244739dd00c607cd97469b9f9133885b901e0239c364eb19b",
+    "prompts_sha256": "c64554f15ff07281492d59a73afe9bbbd905548c826a05fe96dd50a87702ce7c"
+  },
+  "validation_input_info": {
+    "corpus_token_count": 3736,
+    "input_tokens_used": 2048,
+    "scored_tokens": 1020,
+    "ppl_chunks": 4,
+    "ppl_context": 512,
+    "template": "official tokenizer, enable_thinking=False"
+  },
+  "ppl": {
+    "BF16": 24.9287,
+    "Q4_K_M": 26.7812
+  },
+  "ppl_relative_change": 0.07431193764616673,
+  "observed_python_packages": {
+    "cmake": "3.31.10",
+    "gguf": "0.19.0",
+    "huggingface_hub": "0.36.2",
+    "numpy": "2.2.6",
+    "protobuf": "4.25.9",
+    "safetensors": "0.8.0",
+    "sentencepiece": "0.2.2",
+    "tokenizers": "0.22.2",
+    "torch": "2.11.0+cpu",
+    "transformers": "4.57.6"
+  },
+  "reproducibility_note": "Model and llama.cpp versions are pinned. The script installs conversion requirements from the pinned llama.cpp version and records pip freeze; the complete Python environment is not locked. A new run need not reproduce an identical GGUF hash."
+}
